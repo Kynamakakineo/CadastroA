@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTEJJ</title>
+    <link rel = "stylesheet" href="style.css" type = "text/css">
+
+    <script>
+        function cadastrar(event){ event.preventDefault();
+
+            const nome = document.getElementById("intup-nome").value;
+            event.preventDefault();
+            alert("Dados do " + nome + " cadastrados !");
+            document.getElementById("form-cadastro").reset();
+
+       }
+
+    </script>
+</head>
+    
+<body>
+
+<h1>CADASTRO</h1>
+
+<div class="topo">
+
+    <label class="labelIsterEgui">DESCE UM POKINEO</label>
+
+    <form id="form-cadastro" onsubmit="cadastrar(event)">
+        <label for="intup-nome">Nome:</label>
+        <input id="intup-nome" placeholder="Digite seu nome" type="text" required>
+
+        <label for="intup-email">Email:</label>
+        <input id="intup-email" placeholder="Digite seu email" type="email" required>
+
+        <label for="intup-Senha">Senha:</label>
+        <input id="intup-Senha" placeholder="Digite sua senha" type="password" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</div>
+
+<label class="labelDoglinha">eu amo o corinthians</label>
+
+</body>
